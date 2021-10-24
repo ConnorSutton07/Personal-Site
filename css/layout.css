@@ -420,6 +420,31 @@ fieldset[disabled] .btn-theme {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
+.image-overlay {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  font-family: 'PT Mono', monospace;
+}
+
+.image-overlay:hover {
+  opacity: 1;
+}
+
+.image-title{
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
 /* Popup */
 .work .work-popup-overlay {
   position: fixed;
@@ -714,6 +739,7 @@ fieldset[disabled] .btn-theme {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
+
 
 /* Media Queries below 991px */
 @media (max-width: 991px) {
