@@ -181,4 +181,8 @@ a {
 .experience h5 {
     text-align: center;
 }
+
+.experience a {
+    color: black;
+}
 /*------------------------------------------------------------------*/
