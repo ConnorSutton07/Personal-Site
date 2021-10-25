@@ -3,23 +3,31 @@ body {
 }
 
 h6 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 400;
 }
 
+p {
+    font-sie: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
 .container {
-    margin-top: 2cm;
+    margin-top: 1cm;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: 40vh 30vh 30vh;
+    grid-template-rows: 25vh 25vh 25vh;
     grid-gap: 0px;
     grid-auto-flow: column;
     grid-auto-columns: max-content; 
     grid-template-areas: 
-        "empty empty name name photo photo ."
+        "empty empty . name photo photo ."
         "empty empty . . photo photo ."
-        ". photo2 photo2 statement statement statement ."
+        ". photo2 photo2 statement statement statement photo3"
         ". photo2 photo2 statement statement statement photo3"
         ". experience experience . . . photo3 "
         ". experience experience . . . ."
@@ -36,7 +44,7 @@ h6 {
 }
 
 .name-text {
-    padding-top: 33%;
+    padding-top: 55%;
 }
 
 .name header {
@@ -58,7 +66,7 @@ h6 {
     object-fit: cover;
     height: 100%;
     max-width: 100%;
-    min-width: 75%;
+    min-width: 50%;
     vertical-align: middle;
 }
 
@@ -84,12 +92,14 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10%;
 }
 
 .photo3>img {
+    
     object-fit: cover;
     height: 100%;
-    max-width: 100%;
+    max-width: 120%;
     text-align: center;
     
 }
@@ -103,6 +113,10 @@ h6 {
 /*--------Statement-------------------------------------------------*/
 .statement {
     padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 15em;
+    padding-bottom: 2em;
+
     grid-area: statement;
     text-align: center;
 }
