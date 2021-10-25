@@ -1,0 +1,122 @@
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+h6 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.container {
+    margin-top: 2cm;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 40vh 30vh 30vh;
+    grid-gap: 0px;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content; 
+    grid-template-areas: 
+        "empty empty name name photo photo ."
+        "empty empty . . photo photo ."
+        ". photo2 photo2 statement statement statement ."
+        ". photo2 photo2 statement statement statement photo3"
+        ". experience experience . . . photo3 "
+        ". experience experience . . . ."
+        ". . . . . . ."
+        
+}
+
+/*---------Header---------------------------------------------------*/
+.name {
+    text-align: center;
+    grid-area: name;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-text {
+    padding-top: 33%;
+}
+
+.name header {
+
+    font-size: 2em;
+    font-weight: 500;
+}
+/*-------------------------------------------------------------------*/
+
+/*------Images-------------------------------------------------------*/
+.photo {
+    grid-area: photo;
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+
+.photo>img {
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+    min-width: 75%;
+    vertical-align: middle;
+}
+
+.photo2 {
+    grid-area: photo2;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo2>img {
+    object-fit: cover;
+    height: 80%;
+    max-width: 80%;
+    text-align: center;
+    
+}
+
+.photo3 {
+    grid-area: photo3;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo3>img {
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+    text-align: center;
+    
+}
+/*------------------------------------------------------------------*/
+
+.empty {
+    grid-area: empty;
+    background: white;
+}
+
+/*--------Statement-------------------------------------------------*/
+.statement {
+    padding-top: 2em;
+    grid-area: statement;
+    text-align: center;
+}
+
+.statement p {
+    font-size: 1em;
+}
+/*------------------------------------------------------------------*/
+
+/*-------Experience-------------------------------------------------*/
+.experience {
+    grid-area: experience;
+    text-align: center;
+    padding-top: 2em;
+}
+
+/*------------------------------------------------------------------*/
