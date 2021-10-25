@@ -2,13 +2,18 @@ body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
-h6 {
+h5 {
     font-size: 1.7em;
     font-weight: 400;
 }
 
+h6 {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
 p {
-    font-sie: 1.2em;
+    font-size: 1.2em;
 }
 
 a {
@@ -25,11 +30,13 @@ a {
     grid-auto-flow: column;
     grid-auto-columns: max-content; 
     grid-template-areas: 
-        "empty empty . name photo photo ."
-        "empty empty . . photo photo ."
+        "photo4 photo4 . name photo photo ."
+        "photo4 photo4 . . photo photo ."
         ". photo2 photo2 statement statement statement photo3"
         ". photo2 photo2 statement statement statement photo3"
-        ". experience experience . . . photo3 "
+        ". experience experience photo5 photo5 photo5 photo3 "
+        ". experience experience photo5 photo5 photo5 photo3"
+        ". experience experience photo5 photo5 photo5 ."
         ". experience experience . . . ."
         ". . . . . . ."
         
@@ -80,10 +87,10 @@ a {
 
 .photo2>img {
     object-fit: cover;
-    height: 80%;
-    max-width: 80%;
+    height: 90%;
+    max-width: 70%;
     text-align: center;
-    
+    padding-bottom: 5em;
 }
 
 .photo3 {
@@ -102,6 +109,43 @@ a {
     max-width: 120%;
     text-align: center;
     
+}
+
+.photo4 {
+    grid-area: photo4;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-left: 25%;
+}
+
+.photo4>img {
+    
+    object-fit: cover;
+    height: 80%;
+    max-width: 100%;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.photo5 {
+    grid-area: photo5;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3em;
+}
+
+.photo5>img {
+    
+    object-fit: cover;
+    height: 75%;
+    max-width: 75%;
+    text-align: center;
+    padding-bottom: 2em;
 }
 /*------------------------------------------------------------------*/
 
@@ -131,6 +175,10 @@ a {
     grid-area: experience;
     text-align: center;
     padding-top: 2em;
+    text-decoration: underline;
 }
 
+.experience h5 {
+    text-align: center;
+}
 /*------------------------------------------------------------------*/
