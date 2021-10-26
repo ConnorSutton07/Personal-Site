@@ -19,24 +19,25 @@ p {
 
 a {
     text-decoration: none;
+    color: rgb(196, 147, 74);
 }
 
 .container {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr 0.5fr 3fr 1fr 0.5fr 0.5fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr 0.5fr 3fr 1fr 0.5fr 0.5fr 2fr;
     grid-template-rows: 25vh 25vh 25vh;
     grid-gap: 0px;
     grid-auto-flow: column;
     grid-auto-columns: max-content; 
     grid-template-areas: 
-        ". . name name . photo . g y"
-        ". . name name . photo . g y"
-        ". . statement statement  . photo3 . g y"
-        ". . statement statement  . photo3 . g y"
-        ". . experience experience . photo5 . g y"
-        ". . experience experience . photo5 . g y"
-        ". . . . . . . . ."
+        ". . name name . photo . g y o"
+        ". . name name . photo . g y o"
+        ". . statement statement  . photo3 . g y o"
+        ". . statement statement  . photo3 . g y o"
+        ". . experience experience . photo5 . g y o"
+        ". . experience experience . photo5 . g y o"
+        ". . . . . . . . . ."
         
 }
 
@@ -191,5 +192,10 @@ a {
 
 .yellow {
     grid-area: y;
-    background-color: #ffde3b;
+    background-color: #f0d139;
+}
+
+.orange {
+    grid-area: o;
+    background-color: rgb(180, 133, 45);
 }
