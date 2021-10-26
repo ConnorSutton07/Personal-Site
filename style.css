@@ -24,20 +24,20 @@ a {
     margin-top: 1cm;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr 0.5fr 3fr 1fr 2fr 1fr;
     grid-template-rows: 25vh 25vh 25vh;
     grid-gap: 0px;
     grid-auto-flow: column;
     grid-auto-columns: max-content; 
     grid-template-areas: 
-        "photo4 photo4 . name photo photo ."
-        "photo4 photo4 . . photo photo ."
-        ". photo2 photo2 statement statement statement photo3"
-        ". photo2 photo2 statement statement statement photo3"
-        ". experience experience photo5 photo5 photo5 photo3 "
-        ". experience experience photo5 photo5 photo5 photo3"
-        ". experience experience photo5 photo5 photo5 ."
-        ". experience experience . . . ."
+        "photo4 photo4 name name . photo ."
+        "photo4 photo4 . . . photo ."
+        ". photo2 statement statement  . photo3 ."
+        ". photo2 statement statement  . photo3 ."
+        ". . experience experience . photo3 ."
+        ". . experience experience .  photo3 ."
+        ". . experience experience . photo5 ."
+        ". . experience experience . photo5 ."
         ". . . . . . ."
         
 }
@@ -51,7 +51,7 @@ a {
 }
 
 .name-text {
-    padding-top: 55%;
+    padding-top: 25%;
 }
 
 .name header {
@@ -71,8 +71,7 @@ a {
 
 .photo>img {
     object-fit: cover;
-    height: 100%;
-    max-width: 100%;
+    width: 100%;
     min-width: 50%;
     vertical-align: middle;
 }
@@ -106,7 +105,7 @@ a {
     
     object-fit: cover;
     height: 100%;
-    max-width: 120%;
+    max-width: 100%;
     text-align: center;
     
 }
@@ -136,16 +135,16 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 3em;
+    padding-top: 10%;
 }
 
 .photo5>img {
     
     object-fit: cover;
-    height: 75%;
-    max-width: 75%;
+    width: 100%;
+    max-height: 100%;
     text-align: center;
-    padding-bottom: 2em;
+
 }
 /*------------------------------------------------------------------*/
 
@@ -157,8 +156,7 @@ a {
 /*--------Statement-------------------------------------------------*/
 .statement {
     padding-top: 2em;
-    padding-left: 3em;
-    padding-right: 15em;
+
     padding-bottom: 2em;
 
     grid-area: statement;
