@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    margin: 0;
 }
 
 h5 {
@@ -21,24 +22,21 @@ a {
 }
 
 .container {
-    margin-top: 1cm;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr 0.5fr 3fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr 0.5fr 3fr 1fr 0.5fr 0.5fr 1fr 1fr;
     grid-template-rows: 25vh 25vh 25vh;
     grid-gap: 0px;
     grid-auto-flow: column;
     grid-auto-columns: max-content; 
     grid-template-areas: 
-        "photo4 photo4 name name . photo ."
-        "photo4 photo4 . . . photo ."
-        ". photo2 statement statement  . photo3 ."
-        ". photo2 statement statement  . photo3 ."
-        ". . experience experience . photo3 ."
-        ". . experience experience .  photo3 ."
-        ". . experience experience . photo5 ."
-        ". . experience experience . photo5 ."
-        ". . . . . . ."
+        ". . name name . photo . g y"
+        ". . name name . photo . g y"
+        ". . statement statement  . photo3 . g y"
+        ". . statement statement  . photo3 . g y"
+        ". . experience experience . photo5 . g y"
+        ". . experience experience . photo5 . g y"
+        ". . . . . . . . ."
         
 }
 
@@ -51,7 +49,7 @@ a {
 }
 
 .name-text {
-    padding-top: 25%;
+    padding-top: 33%;
 }
 
 .name header {
@@ -74,6 +72,7 @@ a {
     width: 100%;
     min-width: 50%;
     vertical-align: middle;
+    margin-top: 10%;
 }
 
 .photo2 {
@@ -136,6 +135,7 @@ a {
     justify-content: center;
     align-items: center;
     padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .photo5>img {
@@ -156,9 +156,7 @@ a {
 /*--------Statement-------------------------------------------------*/
 .statement {
     padding-top: 2em;
-
     padding-bottom: 2em;
-
     grid-area: statement;
     text-align: center;
 }
@@ -174,6 +172,7 @@ a {
     text-align: center;
     padding-top: 2em;
     text-decoration: underline;
+    padding-top: 25%;
 }
 
 .experience h5 {
@@ -184,3 +183,13 @@ a {
     color: black;
 }
 /*------------------------------------------------------------------*/
+
+.green {
+    grid-area: g;
+    background-color: rgb(83, 151, 83);
+}
+
+.yellow {
+    grid-area: y;
+    background-color: #ffde3b;
+}
