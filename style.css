@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
     margin: 0;
+    background: rgb(255, 252, 247);
 }
 
 h5 {
@@ -63,7 +64,6 @@ a {
 /*------Images-------------------------------------------------------*/
 .photo {
     grid-area: photo;
-    background: white;
     display: flex;
     justify-content: center;
 }
@@ -78,7 +78,6 @@ a {
 
 .photo2 {
     grid-area: photo2;
-    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +93,6 @@ a {
 
 .photo3 {
     grid-area: photo3;
-    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +110,6 @@ a {
 
 .photo4 {
     grid-area: photo4;
-    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +128,6 @@ a {
 
 .photo5 {
     grid-area: photo5;
-    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
