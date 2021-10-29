@@ -26,7 +26,7 @@ a {
 .container {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr 0.5fr 3fr 1fr 0.5fr 0.5fr 2fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr 0.5fr 3fr 2fr 0.5fr 0.5fr 1fr;
     grid-template-rows: 25vh 25vh 25vh;
     grid-gap: 0px;
     grid-auto-flow: column;
@@ -183,15 +183,44 @@ a {
 
 .green {
     grid-area: g;
-    background-color: rgb(83, 151, 83);
+    background-color: rgb(83, 151, 83); 
 }
 
 .yellow {
     grid-area: y;
-    background-color: #f0d139;
+    background-color: #f0d139; 
 }
 
 .orange {
     grid-area: o;
     background-color: rgb(180, 133, 45);
+    /* background-color: #898C30; */
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 25vh;
+        grid-gap: 0px;
+        grid-auto-flow: column;
+        grid-auto-columns: max-content; 
+        grid-template-areas: 
+        "name"
+        "name"
+        "photo"
+        "photo"
+        "statement"
+        "statement"
+        "photo3"
+        "photo3"
+        "experience"
+        "experience"
+        "photo5"
+        "photo5"
+    }
+    
 }
