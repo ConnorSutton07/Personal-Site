@@ -71,7 +71,7 @@ a {
 .photo>img {
     object-fit: cover;
     width: 100%;
-    min-width: 50%;
+    min-width: 80%;
     vertical-align: middle;
     margin-top: 10%;
 }
@@ -85,8 +85,8 @@ a {
 
 .leaves>img {
     object-fit: cover;
-    height: 80%;
-    max-width: 100%;
+    height: 100%;
+    max-width: 120%;
     text-align: center;
     padding-bottom: 5em;
 }
