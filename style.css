@@ -183,7 +183,7 @@ a {
 
 .green {
     grid-area: g;
-    background-color: rgb(83, 151, 83); 
+    /* background-color: rgb(83, 151, 83);  */
 }
 
 .yellow {
